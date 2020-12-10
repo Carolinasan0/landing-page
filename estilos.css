@@ -4,14 +4,13 @@
     background-color: green;
 }
 .identificador{
-    width: 25%;
-    height: 70px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 3%;
-    color: white;
+  width: 50%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
 }
 .links{
     width: 75%;
@@ -33,7 +32,7 @@
   color: #5C7F0F;
 }
 .imagen-principal{
-  width: auto;
+  width: 100px;
   height: 400px;
   background-color: green;
 }
@@ -47,22 +46,16 @@
 }
 .lamp-exterior{
   grid-column: 1 / 2;
-  border-radius: 30px;
-  border: 1px solid gray;
   width: 247px;
   height: 462px;
 }
 .lamp-mesa{
   grid-column: 2 / 3;
-  border-radius:30px;
-  border: 1px solid gray;
   width: 247px;
   height: 462px;
 }
 .lamp-camping{
   grid-column: 3 / 4;
-  border-radius:30px;
-  border: 1px solid gray;
   width: 247px;
   height: 462px;
 }
