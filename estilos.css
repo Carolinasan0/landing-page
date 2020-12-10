@@ -1,0 +1,82 @@
+#contenedor-header{
+    width: auto;
+    height: 80px;
+    background-color: white;
+    text-decoration: none;
+}
+.identificador{
+    width: 25%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3%;
+    color: white;
+}
+.links{
+    width: 75%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding-right: 3%;
+}
+.textonav{
+    text-decoration: none;
+    color: black;
+  }
+  .textonav:hover{
+    color: #5C7F0F;
+  }
+  .imagen-principal{
+    width: 100%;
+    height: 400px;
+    background-color: green;
+  }
+#carrousel-productos{
+    display: flex;
+    background-color: white;
+}
+#contenedor{
+    width: auto;
+    height: 70px;
+    margin: auto;
+    background-color: black;
+}
+.fila{
+    display: flex;
+}
+.columnaizq{
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3%;
+    color: white;
+}
+.divredes{
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-right: ;
+}
+.cuadroizq{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+.cuadroder{
+    height: 30px;
+    width: 30px;
+    padding-left: 20px;
+}
