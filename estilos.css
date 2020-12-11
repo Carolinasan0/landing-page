@@ -1,37 +1,21 @@
-#contenedor-header{
-  width: auto;
-  height: 80px;
-}
-.fila-header{
-  display: flex;
-  height: 80;
-}
 .identificador{
   width: 137px;
-  background-color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin: 9px;
-}
-.links{
-  width: 75%;
-  height: 80px;
-  background-color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: black;
-  text-decoration: none;
-  padding-right: 3%;
+  margin: 0px;
 }
 .textonav{
-  text-decoration: none;
+  display: inline-block;
   color: black;
-  padding: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: white;
 }
 .textonav:hover{
   color: #5C7F0F;
+}
+nav{
+  background: white;
+  padding: 10px;
 }
 #imagen-principal{
   width: 100%;
@@ -45,24 +29,31 @@ img{
   grid-template-rows: 560px;
   justify-content: center;
   background-color: white;
+  justify-items: center;
+  text-align: center;
+  padding-top: 70px;
 }
 .lamp-exterior{
   grid-column: 1 / 2;
-  width: 247px;
+  width: 100%;
   height: 462px;
 }
 .lamp-mesa{
   grid-column: 2 / 3;
-  width: 247px;
+  width: 100%;
   height: 462px;
 }
 .lamp-camping{
   grid-column: 3 / 4;
-  width: 247px;
+  width: 100%;
   height: 462px;
 }
+@keyframes entrar-salir{
+  from{background-color: black;}
+  to{background: #5C7F07;}
+}
 .button{
-  background-color: #5C7F07;
+  background-color: black;
   border: none;
   color: white;
   text-align: center;
@@ -71,6 +62,10 @@ img{
   cursor: pointer;
   width: 211px;
   height: 42px; 
+
+  animation-name: entrar-salir;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .fila{
   display: flex;
@@ -100,6 +95,18 @@ body{
 
 /*Media queries*/
 
-@media only screen and (min-width: 400px) {
-
+@media only screen and (min-width: 360px){
+  .lamp-exterior{
+    width: 60%;
+  }
+  .lamp-mesa{
+    width: 60%;
+  }
+  .lamp-camping{
+    width: 60%;
+  }
+  .button{
+    width: 100%;
+    font-size: 90%;
+  }
 }
