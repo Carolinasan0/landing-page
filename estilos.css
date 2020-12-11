@@ -1,20 +1,23 @@
 #contenedor-header{
     width: auto;
     height: 80px;
-    background-color: green;
+}
+.fila-header{
+  display: flex;
+  width: 1280px;
+  height: 80;
 }
 .identificador{
-  width: 50%;
-  height: 80px;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: white;
+  margin: 9px;
 }
 .links{
     width: 75%;
-    height: 70px;
+    height: 80px;
     background-color: white;
     display: flex;
     justify-content: flex-end;
@@ -32,16 +35,16 @@
   color: #5C7F0F;
 }
 .imagen-principal{
-  width: 100px;
-  height: 400px;
-  background-color: green;
+  width: auto;
+}
+img{
+  width: 100%;
 }
 #carrousel-productos{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-column-end: 33% 33% 33%;
     grid-template-rows: 560px;
     justify-content: center;
-    align-content: center;
     background-color: white;
 }
 .lamp-exterior{
@@ -68,7 +71,7 @@
   margin: 4px 2px;
   cursor: pointer;
   width: 211px;
-  height: 42px; 
+  height: 42px;
 }
 .fila{
     display: flex;
@@ -100,4 +103,7 @@
     height: 30px;
     width: 30px;
     padding-left: 20px;
+}
+body{
+  margin: 0%;
 }
