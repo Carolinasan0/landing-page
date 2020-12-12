@@ -1,7 +1,19 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+
+header{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
 .identificador{
   width: 137px;
-  margin: 9px;
-  margin: 0px;
+  margin: auto;
 }
 .textonav{
   display: inline-block;
@@ -13,21 +25,23 @@
 .textonav:hover{
   color: #5C7F0F;
 }
-nav{
-  background: white;
-  padding: 10px;
-}
+
+/*Sección uno*/
+
 img{
-  width: 90%;
+  width: 100%;
   transition: all 1s ease;
 }
-img:hover{
-  width: 100%;
+.imagen-principal img:hover{
+  width: 90%;
 }
-#carrousel-productos{
+
+/*Sección dos*/
+
+.carrousel-productos{
   display: grid;
   grid-auto-columns: 33% 33% 33%;
-  grid-template-rows: 560px;
+  grid-template-rows: 460px;
   justify-content: center;
   background-color: white;
   justify-items: center;
@@ -37,17 +51,17 @@ img:hover{
 .lamp-exterior{
   grid-column: 1 / 2;
   width: 100%;
-  height: 462px;
+  height: 450px;
 }
 .lamp-mesa{
   grid-column: 2 / 3;
   width: 100%;
-  height: 462px;
+  height: 450px;
 }
 .lamp-camping{
   grid-column: 3 / 4;
   width: 100%;
-  height: 462px;
+  height: 450px;
 }
 @keyframes entrar-salir{
   from{background-color: black;}
@@ -68,6 +82,30 @@ img:hover{
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
+/*Sección tres*/
+
+.secciontres{
+  background: #5C7F07;
+  width: 100%;
+  height: 200px;
+  color: white;
+  text-align: center;
+}
+h1{
+  font-size: 24px;
+  padding-top: 40px;
+  margin:0%;
+}
+p{
+  font-size: 17px;
+  padding: 20px;
+  margin-left: 30px;
+
+}
+
+/*Footer -pie de página*/
+
 .fila{
   display: flex;
 }
@@ -90,14 +128,12 @@ img:hover{
   align-items: center;
   color: white
 }
-body{
-  margin: 0%;
-}
+
 
 /*Media queries*/
 
-@media only screen and (min-width: 360px){
-  
+@media all and (min-width: 350px){
+
   .lamp-exterior{
     width: 60%;
   }
@@ -111,7 +147,17 @@ body{
     width: 100%;
     font-size: 85%;
   }
-  #carrousel-productos{
-    grid-column-gap: 
+  .secciontres{
+    height: 300px;
+    color: white;
+  }
+  .nuestrocompromiso{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 30px;
+  }
+  #contenedor{
+    height: 100px;
   }
 }
