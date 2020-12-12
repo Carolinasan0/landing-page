@@ -4,7 +4,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-/*header*/
+/*HEADER*/
 
 header{
   display: flex;
@@ -26,7 +26,7 @@ header{
   color: #5C7F0F;
 }
 
-/*Sección uno*/
+/*SECCIÓN UNO*/
 
 img{
   width: 100%;
@@ -36,7 +36,7 @@ img{
   width: 90%;
 }
 
-/*Sección dos*/
+/*SECCIÓN DOS*/
 
 .carrousel-productos{
   display: grid;
@@ -83,7 +83,7 @@ img{
   animation-iteration-count: infinite;
 }
 
-/*Sección tres*/
+/*SECCIÓN TRES*/
 
 .secciontres{
   background: #5C7F07;
@@ -104,33 +104,33 @@ p{
 
 }
 
-/*Footer -pie de página*/
+/*PIE DE PÁGINA*/
 
-.fila{
-  display: flex;
-}
-.columnaizq{
-  width: 50%;
-  height: 70px;
+footer{
   background-color: black;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 3%;
+  width: 100%;
   color: white;
-}
-.divredes{
-  width: 50%;
-  height: 70px;
-  background-color: black;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: white
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.widget{
+  text-align: center;
+  margin:  0 auto;
+}
+.widget img{
+  width: 45px;
+  height: 45px;
+  padding-top: 20px;
 }
 
+/*FIN PIE DE PÁGINA*/
 
-/*Media queries*/
+
+/*MEDIA QUERIES*/
 
 @media all and (min-width: 350px){
 
@@ -157,7 +157,6 @@ p{
     text-align: center;
     padding: 30px;
   }
-  #contenedor{
-    height: 100px;
-  }
+
+
 }
